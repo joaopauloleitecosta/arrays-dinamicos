@@ -1,0 +1,118 @@
+object Form1: TForm1
+  Left = 552
+  Height = 440
+  Top = 213
+  Width = 605
+  Caption = 'Arrays Dinâmicos'
+  ClientHeight = 440
+  ClientWidth = 605
+  LCLVersion = '2.2.6.0'
+  object Panel1: TPanel
+    Left = 0
+    Height = 130
+    Top = 0
+    Width = 605
+    Align = alTop
+    ClientHeight = 130
+    ClientWidth = 605
+    TabOrder = 0
+    object Label1: TLabel
+      Left = 16
+      Height = 15
+      Top = 16
+      Width = 88
+      Caption = 'Nome do Aluno:'
+      ParentColor = False
+    end
+    object edtAluno: TEdit
+      Left = 16
+      Height = 23
+      Top = 32
+      Width = 328
+      TabOrder = 0
+    end
+    object Label2: TLabel
+      Left = 16
+      Height = 15
+      Top = 64
+      Width = 47
+      Caption = '1a. Nota:'
+      ParentColor = False
+    end
+    object edtPrimeiraNota: TEdit
+      Left = 16
+      Height = 23
+      Top = 80
+      Width = 80
+      NumbersOnly = True
+      TabOrder = 1
+      Text = '0'
+    end
+    object Label3: TLabel
+      Left = 128
+      Height = 15
+      Top = 64
+      Width = 47
+      Caption = '2a. Nota:'
+      ParentColor = False
+    end
+    object edtSegundaNota: TEdit
+      Left = 128
+      Height = 23
+      Top = 80
+      Width = 80
+      NumbersOnly = True
+      TabOrder = 2
+      Text = '0'
+    end
+    object Button1: TButton
+      Left = 224
+      Height = 25
+      Top = 80
+      Width = 120
+      Caption = 'Gravar Aluno'
+      OnClick = Button1Click
+      TabOrder = 3
+    end
+    object Button2: TButton
+      Left = 352
+      Height = 25
+      Top = 80
+      Width = 112
+      Caption = 'Ler Alunos'
+      OnClick = Button2Click
+      TabOrder = 4
+    end
+    object BitBtn1: TBitBtn
+      Left = 352
+      Height = 30
+      Top = 25
+      Width = 112
+      Caption = '&Fechar'
+      Kind = bkClose
+      ModalResult = 11
+      OnClick = BitBtn1Click
+      TabOrder = 5
+    end
+  end
+  object Panel2: TPanel
+    Left = 0
+    Height = 310
+    Top = 130
+    Width = 605
+    Align = alClient
+    Caption = 'Panel2'
+    ClientHeight = 310
+    ClientWidth = 605
+    TabOrder = 1
+    object mmoRegistro: TMemo
+      Left = 1
+      Height = 308
+      Top = 1
+      Width = 603
+      Align = alClient
+      ScrollBars = ssVertical
+      TabOrder = 0
+    end
+  end
+end
